@@ -1,22 +1,62 @@
 aid: koan
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/koan.png
 name: Koan
-description: Koan is a company surfaced as a portfolio company of uncork-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Koan was a goal-management SaaS at koan.co that billed itself as "The Free OKR and Status
+  Tracking Platform", pairing OKR goal setting with a weekly "Reflections" status-update loop and an
+  Insights layer so teams tracked progress as a habit rather than a quarterly spreadsheet exercise. The
+  product shipped a Goal Metrics API — enabled per goal via an API integration toggle on the goal edit
+  page — so teams could push their most important numbers into Koan goals in real time, alongside a
+  Zapier app and native integrations with Slack, Jira, and Okta SSO. Koan was acquired by Gtmhub, an
+  acquisition announced on its own homepage and blog by January 2022, and surfaced in the API Evangelist
+  network as an Uncork Capital portfolio company. As of enrichment the koan.co domain no longer serves
+  the product: it redirects to a GoDaddy domain-for-sale lander, and there is no live developer portal,
+  documentation, API reference, SDK, or status surface left to harvest.'
 url: https://raw.githubusercontent.com/api-evangelist/koan/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - uncork-capital
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: portfolio-lead-no-public-api
+x-status: acquired
+x-acquired-by: Gtmhub
+x-status-detail: Acquisition by Gtmhub announced on koan.co by January 2022; the koan.co domain now
+  redirects to a GoDaddy for-sale lander and the product is retired.
+x-api-surface: none
+x-api-surface-detail: Koan shipped a Goal Metrics API and a Zapier app while operating, but no public
+  OpenAPI, developer portal, or documentation survives on a live host.
+x-domain-status: parked-for-sale
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- OKRs
+- Goal Management
+- Performance Management
+- Productivity
+- Team Collaboration
+- Status Reporting
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
